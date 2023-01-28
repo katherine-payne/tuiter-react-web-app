@@ -1,0 +1,62 @@
+.wd-bookmarks-title {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.wd-bookmarks-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.wd-bookmarks-post-content {
+    max-width: 506px;
+}
+
+.wd-bookmarks-post-text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-bookmarks-post-image {
+    width: 504px;
+    height: 264px;
+    border: 1px solid rgb(47, 51, 54);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.wd-bookmarks-post-description {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 12px;
+}
+
+.wd-bookmarks-post-reactions {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+}
+
+.wd-bookmarks-reaction {
+    text-decoration: none;
+    width: 100%;
+}
+
+.wd-bookmarks-reaction-red {
+    color: red;
+}
+
+.wd-bookmarks-post-reaction-icon {
+    height: 13px;
+    margin-right: 12px;
+}
+
+.wd-bookmarks-item-space {
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
