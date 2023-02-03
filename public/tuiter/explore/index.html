@@ -3,78 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <link href="../styles.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
 </head>
-<body class="wd-background">
-    <div class="wd-page-header">
-        <div class="wd-explore-search">
-            <img class="wd-search-icon" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png"/>
-            <input class="wd-search-bar wd-white-text" placeholder="Search Tuiter"/>
-            <a href="explore-settings.html"><img class="wd-settings-icon"
-                                                 src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/21-512.png"/></a>
+<body class="container my-2">
+    <div class="row">
+        <div class="col-2 col-lg-1 col-xl-2">
+            <div class="list-group mb-2">
+                <i class="list-group-item fab fa-twitter"></i>
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-home"></i><span class="d-none d-xl-inline m-1">Home</span>
+                </a>
+                <a href="index.html" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-hashtag"></i><span class="d-none d-xl-inline m-1">Explore</span>
+                </a>
+                <a href="../notifications.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-bell"></i><span class="d-none d-xl-inline m-1">Notifications</span>
+                </a>
+                <a href="../messages.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-envelope"></i><span class="d-none d-xl-inline m-1">Messages</span>
+                </a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-bookmark"></i><span class="d-none d-xl-inline m-1">Bookmarks</span>
+                </a>
+                <a href="../lists.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-list"></i><span class="d-none d-xl-inline m-1">Lists</span>
+                </a>
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-user"></i><span class="d-none d-xl-inline m-1">Profile</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <span class="fa-stack fa-1x wd-icon-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="d-none d-xl-inline">More</span>
+                </a>
+            </div>
+            <button type="button" class="btn btn-primary w-100 wd-round-corners">Tuit</button>
         </div>
-        <div class="wd-explore-links wd-font-15 wd-font-bold">
-            <a class="wd-explore-link wd-explore-link-highlighted" href="#">For you</a>
-            <a class="wd-explore-link" href="#">Trending</a>
-            <a class="wd-explore-link" href="#">Science</a>
-            <a class="wd-explore-link" href="#">News</a>
-            <a class="wd-explore-link" href="#">Sports</a>
-            <a class="wd-explore-link" href="#">Entertainment</a>
-        </div>
-    </div>
 
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <p class="wd-gray-text wd-font-13">Trending in Web Dev</p>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">React</p>
-            <p class="wd-gray-text wd-font-13">5.7K Tuits</p>
-        </div>
-    </div>
+        <div class="col-10 col-lg-7 col-xl-6">
+            <div class="mb-2">
+                <div class="d-flex mb-2 position-relative">
+                    <i class="fa fa-search position-absolute wd-search-icon"></i>
+                    <input class="w-100 border border-secondary-subtle rounded-pill py-1 ps-5 me-4"
+                           placeholder="Search Tuiter"/>
+                    <a href="explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <p class="wd-gray-text wd-font-13">Trending in Space</p>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">Total Solar Eclipse</p>
-            <p class="wd-gray-text wd-font-13">2,017 Tuits</p>
-        </div>
-    </div>
+            <div class="position-relative">
+                <img class="w-100" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"/>
+                <span class="position-absolute h3 text-white wd-explore-image-caption">SpaceX's Starship</span>
+            </div>
 
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <span class="wd-white-text wd-font-13 wd-font-bold">Web Dev</span>
-            <span class="wd-gray-text wd-font-13">· Today</span>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">Use CSS to change the styling of your webpage</p>
+            <ul class="list-group">
+                <li class="list-group-item d-flex">
+                    <div class="w-100">
+                        <p class="text-secondary m-0">Web Development</p>
+                        <p class="m-0">
+                            <span class="fw-bold">ReactJS</span>
+                            <i class="fa fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                        </p>
+                        <p class="fw-bold m-0">React.js is a component based front end library that makes it very easy
+                            to build Single Page Applications or SPAs</p>
+                    </div>
+                    <img class="ms-2 wd-explore-image"
+                         src="https://www.svgrepo.com/show/424894/react-logo-programming.svg"/>
+                </li>
+                <li class="list-group-item d-flex">
+                    <div class="w-100">
+                        <p class="m-0">
+                            <span class="fw-bold">JavaScript</span>
+                            <i class="fa fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                        </p>
+                        <p class="fw-bold m-0">JavaScript is programming language that can run on browsers as well as
+                            desktops</p>
+                        <p class="text-secondary m-0">123K Tuits</p>
+                    </div>
+                    <img class="ms-2 wd-explore-image"
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"/>
+                </li>
+                <li class="list-group-item d-flex">
+                    <div class="w-100">
+                        <p class="text-secondary m-0">Web Development</p>
+                        <p class="fw-bold m-0">jQuery</p>
+                        <p class="text-secondary m-0">123K Tuits</p>
+                    </div>
+                    <img class="ms-2 wd-explore-image"
+                         src="https://www.pngitem.com/pimgs/m/206-2069866_transparent-css3-logo-png-jquery-logo-png-png.png"/>
+                </li>
+                <li class="list-group-item d-flex">
+                    <div class="w-100">
+                        <p class="text-secondary m-0">Web Development</p>
+                        <p class="m-0">
+                            <span class="fw-bold">NodeJS</span>
+                            <i class="fa fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                        </p>
+                        <p class="text-secondary m-0">123K Tuits</p>
+                    </div>
+                    <img class="ms-2 wd-explore-image"
+                         src="https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg"/>
+                </li>
+            </ul>
         </div>
-        <img class="wd-explore-image"
-             src="https://simg.nicepng.com/png/small/80-803437_banner-black-and-white-stock-vector-background-for.png"/>
-    </div>
 
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <span class="wd-white-text wd-font-13 wd-font-bold">NASA</span>
-            <span class="wd-gray-text wd-font-13">· Yesterday</span>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">Space is big</p>
+        <div class="d-none d-lg-block col-4">
+            <ul class="list-group d-flex">
+                <li class="list-group-item fw-bold">Who to follow</li>
+                <li class="list-group-item d-flex align-items-center">
+                    <img class="me-2 rounded-circle wd-follow-image"
+                         src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"/>
+                    <div class="w-100">
+                        <p class="m-0 text-nowrap">
+                            <span class="fw-bold">Java</span>
+                            <i class="fa fa-check-circle"></i>
+                        </p>
+                        <p class="m-0">@Java</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-round-corners">Follow</button>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <img class="me-2 rounded-circle wd-follow-image"
+                         src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
+                    <div class="w-100">
+                        <p class="m-0 text-nowrap">
+                            <span class="fw-bold">Relativity Space</span>
+                            <i class="fa fa-check-circle"></i>
+                        </p>
+                        <p class="m-0">@relativityspace</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-round-corners">Follow</button>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <img class="me-2 rounded-circle wd-follow-image"
+                         src="https://static.cdnlogo.com/logos/v/11/virgin.svg"/>
+                    <div class="w-100">
+                        <p class="m-0 text-nowrap">
+                            <span class="fw-bold">Virgin Galactic</span>
+                            <i class="fa fa-check-circle"></i>
+                        </p>
+                        <p class="m-0">@virgingalactic</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-round-corners">Follow</button>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <img class="me-2 rounded-circle wd-follow-image"
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"/>
+                    <div class="w-100">
+                        <p class="m-0 text-nowrap">
+                            <span class="fw-bold">NASA</span>
+                            <i class="fa fa-check-circle"></i>
+                        </p>
+                        <p class="m-0">@NASA</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-round-corners">Follow</button>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <img class="me-2 rounded-circle wd-follow-image"
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>
+                    <div class="w-100">
+                        <p class="m-0 text-nowrap">
+                            <span class="fw-bold">Tesla</span>
+                            <i class="fa fa-check-circle"></i>
+                        </p>
+                        <p class="m-0">@Tesla</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-round-corners">Follow</button>
+                </li>
+            </ul>
         </div>
-        <img class="wd-explore-image" src="https://gpm.nasa.gov/sites/default/files/NASA-Logo-Large.jpg"/>
-    </div>
-
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <p class="wd-gray-text wd-font-13">Science · LIVE</p>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">Carbon is important</p>
-        </div>
-        <img class="wd-explore-image"
-             src="https://w7.pngwing.com/pngs/613/36/png-transparent-periodic-table-symbol-chemical-element-carbon-polonium-carbon-miscellaneous-angle-white.png"/>
-    </div>
-
-    <div class="wd-post">
-        <div class="wd-explore-post-text">
-            <p class="wd-gray-text wd-font-13">News · LIVE</p>
-            <p class="wd-topic wd-white-text wd-font-15 wd-font-bold">Things are happening</p>
-        </div>
-        <img class="wd-explore-image"
-             src="https://play-lh.googleusercontent.com/_ahCmEdTn8h5omlAg0jg9Y15KArlptm4qcbnyWSzGU-jM4mR1LeArqbMM7DzgZjNywO2"/>
     </div>
 </body>
 </html>

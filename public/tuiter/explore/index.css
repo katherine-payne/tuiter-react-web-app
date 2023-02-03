@@ -1,63 +1,33 @@
-.wd-explore-search {
-    display: flex;
-    position: relative;
+.wd-icon-stack {
+    font-size: 0.5em;
+    bottom: 0.25em;
 }
 
-.wd-search-bar {
-    width: 100%;
-    background-color: rgb(30, 30, 30);
-    font-size: 16px;
-    border-width: 0px;
-    border-radius: 16px;
-    padding-left: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-right: 25px;
+.wd-round-corners {
+    border-radius: 1.5em;
 }
 
 .wd-search-icon {
-    height: 16px;
-    position: relative;
-    left: 35px;
-    top: 8px;
+    left: 1em;
+    top: 0.5em;
 }
 
-.wd-settings-icon {
-    width: 25px;
-    margin-top: 5px;
-    margin-right: 12px;
-}
-
-.wd-explore-links {
-    margin-bottom: 12px;
-    margin-top: 24px;
-    list-style: none;
-}
-
-.wd-explore-link {
-    color: rgb(110, 118, 125);
-    text-decoration: none;
-    margin: 16px;
-    padding-bottom: 12px;
-}
-
-.wd-explore-link-highlighted {
-    color: rgb(29, 161, 242);
-    border-bottom: 5px solid rgb(29, 161, 242);
-}
-
-.wd-explore-post-text {
-    width: 100%;
-}
-
-.wd-topic {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.wd-explore-image-caption {
+    left: 0.25em;
+    bottom: 0;
 }
 
 .wd-explore-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 15%;
-    margin-left: 16px;
+    width: 5em;
+    height: 5em;
+    border-radius: 0.5em;
+}
+
+.wd-follow-image {
+    width: 3em;
+    height: 3em;
+}
+
+.wd-follow-button {
+    height: 2.5em;
 }
