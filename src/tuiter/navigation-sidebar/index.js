@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faHome,
     faHashtag,
+    faStarOfLife,
     faBell,
     faEnvelope,
     faBookmark,
@@ -11,25 +12,30 @@ import {
     faEllipsis
 } from "@fortawesome/free-solid-svg-icons";
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2] ?? "";
+
     return (
         <div className="list-group mb-2">
             <a className="list-group-item">
                 <FontAwesomeIcon icon={faTwitter}/><span className="d-none d-xl-inline m-1">Tuiter</span>
             </a>
-            <a href="#" className={`list-group-item list-group-item-action
-                    ${active === 'home' ? 'active' : ''}`}>
+            <Link to="/tuiter" className={`list-group-item list-group-item-action
+                    ${active === '' ? 'active' : ''}`}>
                 <FontAwesomeIcon icon={faHome}/><span className="d-none d-xl-inline m-1">Home</span>
-            </a>
-            <a href="#" className={`list-group-item list-group-item-action
+            </Link>
+            <Link to="/tuiter/explore" className={`list-group-item list-group-item-action
                     ${active === 'explore' ? 'active' : ''}`}>
                 <FontAwesomeIcon icon={faHashtag}/><span className="d-none d-xl-inline m-1">Explore</span>
-            </a>
+            </Link>
+            <Link to="/" className="list-group-item">
+                <FontAwesomeIcon icon={faStarOfLife}/><span className="d-none d-xl-inline m-1">Labs</span>
+            </Link>
             <a href="#" className={`list-group-item list-group-item-action
                     ${active === 'notifications' ? 'active' : ''}`}>
                 <FontAwesomeIcon icon={faBell}/><span className="d-none d-xl-inline m-1">Notifications</span>
