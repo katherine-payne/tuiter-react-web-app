@@ -1,8 +1,8 @@
 import {useDispatch} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart, faMessage, faRetweet, faShareNodes} from "@fortawesome/free-solid-svg-icons";
+import {faHeart, faThumbsDown, faMessage, faRetweet, faShareNodes} from "@fortawesome/free-solid-svg-icons";
 
-import {toggleTuitLiked} from "./tuits-reducer";
+import {updateTuitThunk} from "../services/tuits-thunks";
 
 const TuitStats = (
     {
@@ -29,7 +29,19 @@ const TuitStats = (
             <div className="w-25"><FontAwesomeIcon icon={faMessage} className="me-2"/>{tuit.replies}</div>
             <div className="w-25"><FontAwesomeIcon icon={faRetweet} className="me-2"/>{tuit.retuits}</div>
             <div className="w-25"><FontAwesomeIcon icon={faHeart} className={`me-2 ${tuit.liked ? "wd-text-pink" : ""}`}
-                                                   onClick={() => dispatch(toggleTuitLiked(tuit._id))}/>{tuit.likes}
+                                                   onClick={() => dispatch(updateTuitThunk({
+                                                       ...tuit,
+                                                       liked: !tuit.liked,
+                                                       likes: tuit.likes + (!tuit.liked ? 1 : -1)
+                                                   }))}/>{tuit.likes}
+            </div>
+            <div className="w-25"><FontAwesomeIcon icon={faThumbsDown}
+                                                   className={`me-2 ${tuit.disliked ? "wd-text-pink" : ""}`}
+                                                   onClick={() => dispatch(updateTuitThunk({
+                                                       ...tuit,
+                                                       disliked: !tuit.disliked,
+                                                       dislikes: tuit.dislikes + (!tuit.disliked ? 1 : -1)
+                                                   }))}/>{tuit.dislikes}
             </div>
             <div className="w-25"><FontAwesomeIcon icon={faShareNodes} className="me-2"/></div>
         </div>

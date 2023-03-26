@@ -9,7 +9,7 @@ import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 
-const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer}});
+const store = configureStore({reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (
