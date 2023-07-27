@@ -1,0 +1,33 @@
+.wd-icon-stack {
+    font-size: 0.5em;
+    bottom: 0.25em;
+}
+
+.wd-round-corners {
+    border-radius: 1.5em;
+}
+
+.wd-search-icon {
+    left: 1em;
+    top: 0.5em;
+}
+
+.wd-explore-image-caption {
+    left: 0.25em;
+    bottom: 0;
+}
+
+.wd-explore-image {
+    width: 5em;
+    height: 5em;
+    border-radius: 0.5em;
+}
+
+.wd-follow-image {
+    width: 3em;
+    height: 3em;
+}
+
+.wd-follow-button {
+    height: 2.5em;
+}
